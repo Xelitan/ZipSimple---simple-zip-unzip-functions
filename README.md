@@ -1,10 +1,10 @@
 # Usage
 ```
-  function Zip(Uncompressed: RawByteString; Filename: String): RawByteString;
-  function UnZip(Compressed: RawByteString; Filename: String): RawByteString;
+  function Zip(const Uncompressed: RawByteString; Filename: String): RawByteString;
+  function UnZip(const Compressed: RawByteString; Filename: String): RawByteString;
 
-  function Deflate(Uncompressed: RawByteString): RawByteString; //gzdeflate from PHP
-  function Inflate(Compressed: RawByteString): RawByteString; //gzinflate from PHP
+  function Deflate(const Uncompressed: RawByteString): RawByteString; //gzdeflate from PHP
+  function Inflate(const Compressed: RawByteString): RawByteString; //gzinflate from PHP
 
   function UnGzip(const Compressed: String): String; //gzdecode from PHP
   function GZip(const Uncompressed: AnsiString): AnsiString;
